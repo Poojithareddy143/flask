@@ -1,0 +1,19 @@
+  <from  method="POST" action="{{url_for('login') }}">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+
+      <label for="password">password:</label>
+      <input type3="password" id="password" name="password">
+
+     <button type="submit">Login</button>
+   </from>
+  {% with messages= get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+              {% for messages in messages %}
+                <1i>{{ messages in messages}}</1i>
+             {% endfor %}
+        </ul>
+       {% endif %}
+    {% end with %}
+ </body>  
